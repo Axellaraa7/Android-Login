@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Proyecto</string>
+    <string name="tvTitle">LOG IN FI UNAM</string>
+    <string name="btnValidar">CHECK</string>
+    <string name="tfNombre">Enter your name</string>
+    <string name="tfApe">Enter your lastnames</string>
+    <string name="tfNacimiento">Enter your birthday DD/MM/YYYY</string>
+    <string name="tfCuenta">Account number</string>
+    <string name="spCarrera">Select your career</string>
+    <string name="fiLogo">FI LOGO</string>
+    <string name="UNAM">Universidad Nacional Autónoma de México</string>
+    <string name="dataTitle">User information</string>
+    <string name="errorGral">Enter this field</string>
+    <string name="errorName">Please enter your name</string>
+    <string name="errorApe">Please enter your lastnames</string>
+    <string name="errorNacimiento">Please enter your birthday</string>
+    <string name="errorCuenta">Please enter your account number</string>
+    <string name="errorCarrera">Please select your career</string>
+    <string name="errorCuentaSize">The account number is not compatible</string>
+    <string name="errorObject">The object doesn\'t exist</string>
+    <string name="imgUser">imgUser</string>
+    <string name="Carrera">Career</string>
+    <string name="edad">"You are: "</string>
+    <string name="age">years old.</string>
+    <string name="errorAge">The age is not available</string>
+</resources>

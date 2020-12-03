@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Proyecto</string>
+    <!--Strings para la pantalla principal -->
+    <string name="tvTitle">LOG IN FI UNAM</string>
+    <string name="btnValidar">VALIDAR</string>
+    <string name="tfNombre">Inserta tu nombre</string>
+    <string name="tfApe">Inserta tus apellidos</string>
+    <string name="tfNacimiento">Fecha de Nacimiento</string>
+    <string name="tfCuenta">Numero de cuenta</string>
+    <string name="spCarrera">Selecciona tu carrera</string>
+
+    <!--Strings descripción de imagenes-->
+    <string name="fiLogo">FI LOGO</string>
+    <string name="imgUser">imgUser</string>
+    <string name="Carrera">Carrera</string>
+
+    <!--Strings para mostrar los errores-->
+    <string name="errorGral">Ingresa el dato</string>
+    <string name="errorName">Por favor ingresa el nombre</string>
+    <string name="errorApe">Por favor ingresa los apellidos</string>
+    <string name="errorNacimiento">Por favor ingresa la fecha de nacimiento</string>
+    <string name="errorCuenta">Por favor ingresa el numero de cuenta</string>
+    <string name="errorCuentaSize">El numero de cuenta ingresado es incompatible</string>
+    <string name="errorCarrera">Por favor selecciona la carrera</string>
+    <string name="errorObject">No existe objeto</string>
+    <string name="errorAge">La edad no es permitida</string>
+
+    <!--Strings para la pantalla de datos-->
+    <string name="UNAM">Universidad Nacional Autónoma de México</string>
+    <string name="dataTitle">Datos del usuario</string>
+    <string name="home" translatable="false">HOME</string>
+    <string name="edad">Tu edad es:\</string>
+    <string name="age">años.</string>
+
+    <!--Strings identificadores-->
+    <string name="clave" translatable="false">alumno</string>
+    <string name="picker" translatable="false">dataPicker</string>
+
+   <!--Strings diseño de texto-->
+    <string name="diagonal" translatable="false">\/\</string>
+
+   <!--Integers-->
+    <integer name="anio" >2005</integer>
+    <integer name="minNum">8</integer>
+    <integer name="maxNum">10</integer>
+    <integer name="maxNames">30</integer>
+
+    <!--Inicializadores-->
+    <integer name="cero">0</integer>
+    <string name="vacio" translatable="false"></string>
+
+
+
+</resources>

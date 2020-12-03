@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="carrerasFI">
+        <item>@string/spCarrera</item>
+        <item>Ingeniería Aeroespacial</item>
+        <item>Ingeniería Ambiental</item>
+        <item>Ingeniería Biomédica</item>
+        <item>Ingeniería Civíl</item>
+        <item>Ingeniería Computación</item>
+        <item>Ingeniería Electrica-electrónica</item>
+        <item>Ingeniería Geofísica</item>
+        <item>Ingeniería Geológica</item>
+        <item>Ingeniería Geomática</item>
+        <item>Ingeniería Industrial</item>
+        <item>Ingeniería Mecánica</item>
+        <item>Ingeniería Mecatrónica </item>
+        <item>Ingeniería Minas</item>
+        <item>Ingeniería Petroléra</item>
+        <item>Ingeniería Telecomunicaciones </item>
+    </string-array>
+</resources>
