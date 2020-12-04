@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/tvTitle"
-        android:layout_width="183dp"
-        android:layout_height="88dp"
+        android:layout_width="177dp"
+        android:layout_height="92dp"
         android:fontFamily="sans-serif-condensed-light"
         android:text="@string/tvTitle"
         android:textAlignment="center"
@@ -37,13 +37,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.869" />
+        app:layout_constraintTop_toBottomOf="@+id/spCarreras"
+        app:layout_constraintVertical_bias="0.281" />
 
     <EditText
         android:id="@+id/tfNombre"
         android:layout_width="320dp"
         android:layout_height="40dp"
+        android:layout_marginTop="40dp"
         android:autofillHints="@string/tfNombre"
         android:background="@color/tfBackground"
         android:ems="10"
@@ -51,25 +52,25 @@
         android:hint="@string/tfNombre"
         android:inputType="textPersonName"
         android:maxLength="@integer/maxNames"
+        android:maxLines="1"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textColorHint="@color/tfFont"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:maxLines="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintVertical_bias="0.007" />
 
     <EditText
         android:id="@+id/tfApe"
-        android:maxLines="1"
         android:layout_width="320dp"
         android:layout_height="40dp"
+        android:layout_marginTop="24dp"
         android:autofillHints="@string/tfApe"
         android:background="@color/tfBackground"
         android:ems="10"
@@ -77,6 +78,7 @@
         android:hint="@string/tfApe"
         android:inputType="textPersonName"
         android:maxLength="@integer/maxNames"
+        android:maxLines="1"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
@@ -87,8 +89,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.338" />
+        app:layout_constraintTop_toBottomOf="@+id/tfNombre"
+        app:layout_constraintVertical_bias="0.026" />
 
     <EditText
         android:id="@+id/tfNacimiento"
@@ -115,8 +117,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.454" />
+        app:layout_constraintTop_toBottomOf="@+id/tfApe"
+        app:layout_constraintVertical_bias="0.069" />
 
     <EditText
         android:id="@+id/tfCuenta"
@@ -127,7 +129,7 @@
         android:ems="10"
         android:fontFamily="sans-serif-condensed"
         android:hint="@string/tfCuenta"
-        android:inputType="numberSigned"
+        android:inputType="number"
         android:maxLength="@integer/maxNum"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -139,8 +141,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.561" />
+        app:layout_constraintTop_toBottomOf="@+id/tfNacimiento"
+        app:layout_constraintVertical_bias="0.115" />
 
     <Spinner
         android:id="@+id/spCarreras"
@@ -155,8 +157,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.691" />
+        app:layout_constraintTop_toBottomOf="@+id/tfCuenta"
+        app:layout_constraintVertical_bias="0.116" />
 
     <ImageView
         android:id="@+id/fiLogo"
@@ -165,8 +167,8 @@
         android:contentDescription="@string/fiLogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.844"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toEndOf="@+id/tvTitle"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.026"
         app:srcCompat="@drawable/logofi" />

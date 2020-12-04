@@ -5,109 +5,116 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/loBackground"
+    android:fadeScrollbars="false"
     tools:context=".dataUsers">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="383dp"
-        android:layout_height="430dp"
+        android:layout_width="371dp"
+        android:layout_height="397dp"
+        android:layout_marginTop="51dp"
         android:background="@color/azulDatos"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.92" />
+        app:layout_constraintTop_toBottomOf="@+id/UNAMLogo"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/fiLogo"
-        android:layout_width="150dp"
-        android:layout_height="125dp"
+        android:layout_width="130dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
         android:contentDescription="@string/fiLogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintHorizontal_bias="0.782"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.105"
+        app:layout_constraintTop_toBottomOf="@+id/tfUNAM"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logofi" />
 
     <ImageView
         android:id="@+id/imgUser"
         android:layout_width="140dp"
-        android:layout_height="123dp"
+        android:layout_height="120dp"
         android:contentDescription="@string/imgUser"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.046"
         app:srcCompat="@drawable/user" />
 
     <ImageView
         android:id="@+id/UNAMLogo"
-        android:layout_width="150dp"
-        android:layout_height="125dp"
+        android:layout_width="130dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
         android:contentDescription="@string/UNAM"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintEnd_toStartOf="@+id/fiLogo"
+        app:layout_constraintHorizontal_bias="0.37"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.105"
+        app:layout_constraintTop_toBottomOf="@+id/tfUNAM"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/unam" />
 
     <ImageView
         android:id="@+id/Carrera"
-        android:layout_width="282dp"
-        android:layout_height="187dp"
+        android:layout_width="280dp"
+        android:layout_height="165dp"
         android:contentDescription="@string/Carrera"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.869" />
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.777" />
 
     <TextView
         android:id="@+id/tfCuenta2"
         android:layout_width="190dp"
         android:layout_height="40dp"
+        android:layout_marginBottom="12dp"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/vacio"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/tfFont"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.841"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.419" />
+        app:layout_constraintBottom_toTopOf="@+id/tfFechaNac"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toEndOf="@+id/imgUser"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.9" />
 
     <TextView
         android:id="@+id/tfFechaNac"
         android:layout_width="190dp"
         android:layout_height="40dp"
+        android:layout_marginTop="80dp"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/vacio"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/tfFont"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.837"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.515" />
+        app:layout_constraintBottom_toTopOf="@+id/Carrera"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toEndOf="@+id/imgUser"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.048" />
 
     <TextView
         android:id="@+id/tfCarrera"
-        android:layout_width="372dp"
+        android:layout_width="370dp"
         android:layout_height="48dp"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/vacio"
@@ -116,34 +123,35 @@
         android:textColor="@color/tfFont"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintTop_toBottomOf="@+id/Carrera"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tfNombre2"
-        android:layout_width="148dp"
-        android:layout_height="57dp"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
         android:scrollbars="vertical"
         android:text=""
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/tfFont"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:verticalScrollbarPosition="defaultPosition"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.603" />
+        app:layout_constraintBottom_toTopOf="@+id/Carrera"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/imgUser"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tfUNAM"
         android:layout_width="335dp"
-        android:layout_height="29dp"
+        android:layout_height="30dp"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/UNAM"
         android:textAlignment="center"
@@ -153,26 +161,26 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.039" />
+        app:layout_constraintVertical_bias="0.012" />
 
     <TextView
         android:id="@+id/tfDatos"
         android:layout_width="258dp"
-        android:layout_height="37dp"
+        android:layout_height="35dp"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/dataTitle"
         android:textAllCaps="true"
         android:textColor="@color/black"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.304" />
+        app:layout_constraintTop_toBottomOf="@+id/UNAMLogo"
+        app:layout_constraintVertical_bias="0.28" />
 
     <Button
         android:id="@+id/button"
@@ -181,12 +189,26 @@
         android:background="@android:color/holo_red_dark"
         android:onClick="getHome"
         android:text="@string/home"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.898"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.304" />
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toEndOf="@+id/tfDatos"
+        app:layout_constraintTop_toBottomOf="@+id/fiLogo"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="370dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="581dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
