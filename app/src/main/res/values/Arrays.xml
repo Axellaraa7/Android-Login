@@ -2,20 +2,20 @@
 <resources>
     <string-array name="carrerasFI">
         <item>@string/spCarrera</item>
-        <item>Ingeniería Aeroespacial</item>
-        <item>Ingeniería Ambiental</item>
-        <item>Ingeniería Biomédica</item>
-        <item>Ingeniería Civíl</item>
-        <item>Ingeniería Computación</item>
-        <item>Ingeniería Electrica-electrónica</item>
-        <item>Ingeniería Geofísica</item>
-        <item>Ingeniería Geológica</item>
-        <item>Ingeniería Geomática</item>
-        <item>Ingeniería Industrial</item>
-        <item>Ingeniería Mecánica</item>
-        <item>Ingeniería Mecatrónica </item>
-        <item>Ingeniería Minas</item>
-        <item>Ingeniería Petroléra</item>
-        <item>Ingeniería Telecomunicaciones </item>
+        <item>@string/iAero</item>
+        <item>@string/iAmbiental</item>
+        <item>@string/iBiomedica</item>
+        <item>@string/iCivil</item>
+        <item>@string/iCompu</item>
+        <item>@string/iEE</item>
+        <item>@string/iGeofi</item>
+        <item>@string/iGeolo</item>
+        <item>@string/iGeoma</item>
+        <item>@string/iIndustrial</item>
+        <item>@string/iMeca</item>
+        <item>@string/iMecatronica </item>
+        <item>@string/iMinas</item>
+        <item>@string/iPetro</item>
+        <item>@string/iTelecom</item>
     </string-array>
 </resources>

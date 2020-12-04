@@ -79,7 +79,7 @@ public class LOG_IN extends AppCompatActivity implements View.OnClickListener {
 
     }
     //Verifica si los EditText están vacios.
-    public boolean missingField(EditText et){
+    private boolean missingField(EditText et){
         if(et.getText().toString().isEmpty()) {
             return false;
         }

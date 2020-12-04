@@ -5,7 +5,7 @@
     <string name="btnValidar">CHECK</string>
     <string name="tfNombre">Enter your name</string>
     <string name="tfApe">Enter your lastnames</string>
-    <string name="tfNacimiento">Enter your birthday DD/MM/YYYY</string>
+    <string name="tfNacimiento">Enter your birthday</string>
     <string name="tfCuenta">Account number</string>
     <string name="spCarrera">Select your career</string>
     <string name="fiLogo">FI LOGO</string>
@@ -21,7 +21,22 @@
     <string name="errorObject">The object doesn\'t exist</string>
     <string name="imgUser">imgUser</string>
     <string name="Carrera">Career</string>
-    <string name="edad">"You are: "</string>
-    <string name="age">years old.</string>
+    <string name="edad">You are: </string>
+    <string name="age">\u0020years old.</string>
     <string name="errorAge">The age is not available</string>
+    <string name="iAero">Aerospace Engineering</string>
+    <string name="iCivil">Civil Engineering</string>
+    <string name="iGeoma">Geomatics Engineering</string>
+    <string name="iAmbiental">Environmental Engineering</string>
+    <string name="iGeofi">Geophysical Engineering</string>
+    <string name="iGeolo">Geological Engineering</string>
+    <string name="iPetro">Petroleum Engineering</string>
+    <string name="iMinas">Mining Engineering</string>
+    <string name="iCompu">Computer Engineering</string>
+    <string name="iEE">Electronic-electrical Engineering</string>
+    <string name="iTelecom">Telecommunication Engineering</string>
+    <string name="iMeca">Mechanical Engineering</string>
+    <string name="iIndustrial">Industrial Engineering</string>
+    <string name="iMecatronica">Mechatronics Engineering</string>
+    <string name="iBiomedica">Biomedical Engineering</string>
 </resources>

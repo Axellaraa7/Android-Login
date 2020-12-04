@@ -51,7 +51,7 @@ public class dataUsers extends AppCompatActivity {
             //Función para asignar la imaen
             selectImage(alumno.getId());
         }else{
-            Toast.makeText(this,getResources().getString(R.string.errorObject),Toast.LENGTH_LONG);
+            Toast.makeText(this,getResources().getString(R.string.errorObject),Toast.LENGTH_LONG).show();
         }
     }
 
@@ -60,14 +60,13 @@ public class dataUsers extends AppCompatActivity {
         //Obtenemo la fecha actual
         Calendar c=Calendar.getInstance();
         int year=c.get(Calendar.YEAR);
-        int month=c.get(Calendar.MONTH);
+        int month=c.get(Calendar.MONTH)+1;
         int day=c.get(Calendar.DAY_OF_MONTH);
         //Obtenemos la fecha ingresada en el Datepicker
         String bd[]=date.split(getResources().getString(R.string.diagonal));
         int yearbd=Integer.parseInt(bd[2]);
         int monthbd=Integer.parseInt(bd[1]);
         int daybd=Integer.parseInt(bd[0]);
-
         //Obtenemos la edad
         if(month>monthbd) age=year-yearbd;
         else if(month==monthbd){
@@ -75,12 +74,13 @@ public class dataUsers extends AppCompatActivity {
             else age=year-yearbd-1;
         }else age=year-yearbd-1;
 
+
         return age;
 
     }
 
     //Seleccionamos la edad, dependiendo del indice seleccionado en el spinner
-    protected void selectImage(int id){
+    private void selectImage(int id){
         switch (id){
             case 1:
                 Carrera.setImageDrawable(getResources().getDrawable(R.drawable.aeroespacial));
@@ -128,7 +128,7 @@ public class dataUsers extends AppCompatActivity {
                 Carrera.setImageDrawable(getResources().getDrawable(R.drawable.telecomunicaciones));
                 break;
             default:
-                Toast.makeText(this,getResources().getString(R.string.errorObject),Toast.LENGTH_LONG);
+                Toast.makeText(this,getResources().getString(R.string.errorObject),Toast.LENGTH_LONG).show();
                 break;
         }
     }

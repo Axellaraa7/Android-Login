@@ -29,15 +29,15 @@
     <string name="UNAM">Universidad Nacional Autónoma de México</string>
     <string name="dataTitle">Datos del usuario</string>
     <string name="home" translatable="false">HOME</string>
-    <string name="edad">Tu edad es:\</string>
-    <string name="age">años.</string>
+    <string name="edad">Tu edad es:\u0020</string>
+    <string name="age">\u0020años.</string>
 
     <!--Strings identificadores-->
     <string name="clave" translatable="false">alumno</string>
     <string name="picker" translatable="false">dataPicker</string>
 
    <!--Strings diseño de texto-->
-    <string name="diagonal" translatable="false">\/\</string>
+    <string name="diagonal" translatable="false">/</string>
 
    <!--Integers-->
     <integer name="anio" >2005</integer>
@@ -48,6 +48,24 @@
     <!--Inicializadores-->
     <integer name="cero">0</integer>
     <string name="vacio" translatable="false"></string>
+
+    <!--Carreras-->
+    <string name="iAero">Ingeniería Aeroespacial</string>
+    <string name="iAmbiental">Ingeniería Ambiental</string>
+    <string name="iBiomedica">Ingeniería Biomédica</string>
+    <string name="iCivil">Ingeniería Civil</string>
+    <string name="iCompu">Ingeniería Computación</string>
+    <string name="iEE">Ingeniería Eléctrica-electrónica</string>
+    <string name="iGeofi">Ingeniería Geofísica</string>
+    <string name="iGeolo">Ingeniería Geológica</string>
+    <string name="iGeoma">Ingeniería Geomática</string>
+    <string name="iIndustrial">Ingeniería Industrial</string>
+    <string name="iMeca">Ingeniería Mecánica</string>
+    <string name="iMecatronica">Ingeniería Mecatrónica</string>
+    <string name="iMinas">Ingeniería Minas</string>
+    <string name="iPetro">Ingeniería Petroléra</string>
+    <string name="iTelecom">Ingeniería Telecomunicaciones</string>
+
 
 
 

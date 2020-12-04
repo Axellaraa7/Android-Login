@@ -8,20 +8,17 @@
     android:fadeScrollbars="false"
     tools:context=".dataUsers">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="371dp"
-        android:layout_height="397dp"
-        android:layout_marginTop="51dp"
+    <View
+        android:id="@+id/vElements"
+        android:layout_width="370dp"
+        android:layout_height="395dp"
         android:background="@color/azulDatos"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/UNAMLogo"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.395" />
 
     <ImageView
         android:id="@+id/fiLogo"
@@ -41,13 +38,14 @@
         android:id="@+id/imgUser"
         android:layout_width="140dp"
         android:layout_height="120dp"
+        android:layout_marginEnd="228dp"
         android:contentDescription="@string/imgUser"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintBottom_toBottomOf="@+id/vElements"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/toolbar"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.046"
+        app:layout_constraintStart_toStartOf="@+id/vElements"
+        app:layout_constraintTop_toTopOf="@+id/vElements"
+        app:layout_constraintVertical_bias="0.04"
         app:srcCompat="@drawable/user" />
 
     <ImageView
@@ -69,18 +67,20 @@
         android:layout_width="280dp"
         android:layout_height="165dp"
         android:contentDescription="@string/Carrera"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="@+id/toolbar"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.777" />
+        app:layout_constraintBottom_toBottomOf="@+id/vElements"
+        app:layout_constraintEnd_toEndOf="@+id/vElements"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vElements"
+        app:layout_constraintVertical_bias="0.786" />
 
     <TextView
         android:id="@+id/tfCuenta2"
         android:layout_width="190dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="64dp"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/vacio"
         android:textAlignment="center"
@@ -88,17 +88,17 @@
         android:textColor="@color/tfFont"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/tfFechaNac"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar"
-        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintEnd_toEndOf="@+id/vElements"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imgUser"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintTop_toTopOf="@+id/vElements"
+        app:layout_constraintVertical_bias="0.027" />
 
     <TextView
         android:id="@+id/tfFechaNac"
         android:layout_width="190dp"
         android:layout_height="40dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/vacio"
         android:textAlignment="center"
@@ -106,16 +106,17 @@
         android:textColor="@color/tfFont"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/Carrera"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar"
-        app:layout_constraintHorizontal_bias="0.631"
-        app:layout_constraintStart_toEndOf="@+id/imgUser"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintEnd_toEndOf="@+id/vElements"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toEndOf="@+id/tfNombre2"
+        app:layout_constraintTop_toTopOf="@+id/vElements"
+        app:layout_constraintVertical_bias="0.816" />
 
     <TextView
         android:id="@+id/tfCarrera"
         android:layout_width="370dp"
         android:layout_height="48dp"
+        android:layout_marginStart="8dp"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/vacio"
         android:textAlignment="center"
@@ -123,16 +124,16 @@
         android:textColor="@color/tfFont"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/vElements"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/vElements"
         app:layout_constraintTop_toBottomOf="@+id/Carrera"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tfNombre2"
-        android:layout_width="160dp"
-        android:layout_height="40dp"
+        android:layout_width="150dp"
+        android:layout_height="43dp"
         android:layout_marginTop="1dp"
         android:scrollbars="vertical"
         android:text="@string/vacio"
@@ -142,11 +143,11 @@
         android:textSize="14sp"
         android:verticalScrollbarPosition="defaultPosition"
         app:layout_constraintBottom_toTopOf="@+id/Carrera"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/vElements"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgUser"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.55" />
 
     <TextView
         android:id="@+id/tfUNAM"
@@ -170,17 +171,17 @@
         android:id="@+id/tfDatos"
         android:layout_width="258dp"
         android:layout_height="35dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/dataTitle"
         android:textAllCaps="true"
         android:textColor="@color/black"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/vElements"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/UNAMLogo"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintTop_toBottomOf="@+id/UNAMLogo" />
 
     <Button
         android:id="@+id/button"
@@ -189,12 +190,11 @@
         android:background="@android:color/holo_red_dark"
         android:onClick="getHome"
         android:text="@string/home"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/vElements"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toEndOf="@+id/tfDatos"
-        app:layout_constraintTop_toBottomOf="@+id/fiLogo"
-        app:layout_constraintVertical_bias="0.333" />
+        app:layout_constraintTop_toBottomOf="@+id/fiLogo" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
